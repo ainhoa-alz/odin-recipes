@@ -1,0 +1,23 @@
+* {
+    background-color: #ECEBF1;
+    font-family: "Verdana", sans-serif;
+}
+
+h1, h2 {
+    color: #252121; ;
+}
+
+p, a, li {
+    font-size: 18px;
+    color: #312f38;
+}
+
+li::marker {
+    color: rgb(223, 43, 184);
+    font-weight: 800;
+  }
+
+a {
+    color: rgb(223, 43, 184);
+    font-weight: bold;
+}
