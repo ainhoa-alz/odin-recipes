@@ -1,15 +1,31 @@
 * {
     background-color: #ECEBF1;
     font-family: "Verdana", sans-serif;
+    outline: 1px solid red;
 }
 
 h1 {
-    color: #212125; ;
+    color: #212125;
+    text-align: center;
+    margin: 60px;
 }
 
-a {
-    font-size: 18px;
-    color: #312f38;
+ul{
+    width: 75%;
+    margin: auto;
+    padding: 0;
+    text-align: center
+}
+
+li {
+    display: inline-block;
+    padding: 30px; 
+    margin: 20px;
+    width: 20%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+a { 
 }
 
 li::marker {
