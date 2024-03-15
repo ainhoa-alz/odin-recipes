@@ -1,57 +1,188 @@
-* {
-    background-color: #ECEBF1;
-    font-family: "Verdana", sans-serif;
+/* Include the desired font family from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
 }
 
-h1{
+/* Menu*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px; 
+}
+
+
+.right-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 20px;
+    align-items: center;
+   
+}
+
+.logo-img{
+    border-radius: 5px;
+}
+.menu-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.left-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sign-up, .login {
+    border-radius: 15px;
+    padding: 5px 15px; 
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 699;
+}
+
+.login {
+    border: 2px solid #f03da5;
+    color: #f03da5;
+    background-color: white;
+}
+
+.sign-up {
+    border: 2px solid #f03da5;
+    color: white; 
+    background-color: #f03da5;
+}
+
+/*Hero*/
+
+.hero{
+    background-image: url(images/hero-image.jpg);
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    height: 500px; /* Adjust height as needed */
+    margin: 15px 100px;
+    border-radius: 5px;
+}
+
+.hero-text{
+    padding: 80px;
+    width: 500px;
+}
+
+.title-hero {
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+.flavors {
+    color: #f03da5;
+}
+
+.title-text {
+    font-size: 20px;
+    color:#4d4d53;
+    margin-top:10px;
+    line-height: 1.5;
+}
+
+.app{
+    border: 2px solid #f03da5;
+    color: white; 
+    background-color: #f03da5;
+    border-radius: 15px;
+    padding: 5px 15px; 
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 699;
+
+}
+
+/*Benefits*/
+
+.benefits {
+    margin: 20px 100px 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.value {
+    width: 300px;
+    background-color: #f5f4f0;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.benefit-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+.benefit-subtext{
+    margin-top: 5px;
+    color:#4d4d53;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.benefit-pic{
+    margin-bottom: 0px;
+}
+
+/* Title */
+
+
+.title2{
     color: #212125;
     text-align: left;
-    padding-top: 80px;
-    width: 75%;
-    margin: auto;
+    margin: 60px auto 40px 100px;
+    
 }   
 
-.first-project {
-    color: #6a6a6e;
-    padding-top:10px;
-    padding-bottom: 30px;
-    text-align: left;
-    width: 75%;
-    margin: auto;
-    #color:#6a6a6e;
-    line-height: 25px;
+
+/* cards */
+
+.trending {
+    margin: 40px 100px 150px;
 }
 
-ul{
-    width: 75%;
-    margin: auto;
-    padding: 0;
-    text-align: center
+    
+
+.list{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
 }
 
-li {
-    display: inline-block; 
-    margin: 20px;
-    width: 400px;
-    vertical-align: top; 
-    min-height: 60px;  /* Prevents the boxes from having different sizes */
-}
-
-a { 
+.card-link { 
     display: block;  /* Make the anchor fill its parent's space */
     padding: 10px;
     background-color: white;
     text-decoration: none;
     text-align: left;
-    font-weight: bold;
     border-radius: 15px;
-    box-shadow: 0 0 6px rgba(95, 95, 95, 0.2);
+    box-shadow: 0 0 6px rgba(2, 2, 2, 0.2);
     font-size: 20px;
     color: #212125;
+    width: 370px;
+    min-height: 200px;  /* Prevents the boxes from having different sizes */
 }
 a:hover { 
-    color: rgb(240, 62, 166);
-    box-shadow: 0 0 6px rgba(95, 95, 95, 0.5);
+    color: #f03da5;
 } 
 
 h4 {
@@ -60,24 +191,30 @@ h4 {
     margin-bottom: 10px;
 }
 
-img {
+.recipe-image {
     width: 100%;
-    height: 300px;
+    height: 188px;
     border-radius: 15px;
     object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 .description{
-    font-size: 17px;
-    font-weight: 100;
-    color: #6a6a6e;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #4d4d53;
     background: white;
-    line-height: 20px;
     margin-top:5px
-
 }
 
-li::marker {
-    color: rgb(223, 43, 184);
-  }
-  
+/*Footer*/
+footer{
+    background-color: #f03da5;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+
+
+
