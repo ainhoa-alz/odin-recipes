@@ -1,65 +1,180 @@
-* {
-    background-color: #ECEBF1;
-    font-family: "Verdana", sans-serif;
-}
 
-body{
-    width: 75%;
-    margin: auto;
-    margin-bottom:80px;
-}
+/* Include the desired font family from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-h1, h2 {
-    color: #252121;
-    padding-top: 40px;
-    margin-bottom: 0px;
-}
-
-p.description {
-    margin-top:8px;
-    line-height: 25px;
-    margin-bottom: 30px;
-}
-
-img{
+body {
+    font-family: "Roboto", sans-serif;
     width: 100%;
-    height: 450px;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 25px; 
 }
 
-h2{
-    paddin-top:20px;
-    margin-top:0px;
+a:hover { 
+    color: #f03da5;
+} 
+
+/* Menu*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px; 
+}
+.right-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 20px;
+    align-items: center;
+}
+.logo-img{
+    border-radius: 5px;
+}
+.menu-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.left-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
-ul, ol, strong, em{
-    background-color: #fff7f7;
+.sign-up, .login {
+    border-radius: 15px;
+    padding: 5px 15px; 
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #f03da5;
+}
+
+.login {
+    color: #f03da5;
+    background-color: white;
+}
+
+.sign-up {
+    border: 2px solid #f03da5;
+    color: white; 
+    background-color: #f03da5;
+}
+
+/* Hero*/
+.hero-recipe{
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    height: 500px; /* Adjust height as needed */
+    margin: 15px 100px;
+    border-radius: 5px;
+}
+
+.hero-recipe-text{
+    padding: 80px;
+    width: 500px;
+}
+.title-hero-recipe, .title-text-recipe {
+    background-color: white;
+    padding: 10px;
+
+}
+.title-hero-recipe {
+    font-size: 60px;
+    margin-bottom: 0px;
+    width: fit-content;
+
+}
+
+.title-text-recipe {
+    font-size: 20px;
+    margin-top:10px;
+    line-height: 1.5;
+    color: #4d4d53;
+
+}
+
+/* Recipe*/
+
+.recipe {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin: 15px 100px;
+    flex: 1 1 auto;
+
+}
+
+.steps-list, .ingredients-list{
+    font-size: 18px;
+    line-height: 2;
+    color: #4d4d53;
+    flex: 1;
+}
+
+.ingredients{
+    width: 400px;
+    height: fit-content;
+    background-color: #f5f4f0;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+li::marker{
+    font-weight: 600;
+}
+
+.blocks {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    justify-content: end;
+}
+
+.card{
+    background-color: #f5f4f0;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: fit-content;
+    text-align: center;
+}
+
+.info-img{
+    padding-top: 10px;
+}
+
+.like-sharing{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.back-link {
+    margin: 15px 100px 60px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+
     
 }
 
-ul,ol{
-    padding: 30px;
-    border-radius: 25px; 
-    padding-left: 40px;
-
-}
-
-li{
-    background-color: rgb(255, 243, 245);
-}
-
-p, a, li {
+.end {
     font-size: 18px;
     color: #4d4d53;
+    line-height: 1.5;
 }
 
-li::marker {
-    color: #252121;
-    font-weight: 800;
-  }
 
-a {
-    color: rgb(223, 43, 184);
-    font-weight: bold;
+
+/*Footer*/
+footer{
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 60px;
 }
+
+
